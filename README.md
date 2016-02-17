@@ -14,21 +14,21 @@
 ### Create and start a queue/table on Oracle
 
 ```
-BEGIN DBMS_AQADM.CREATE_QUEUE_TABLE(
+BEGIN
+  DBMS_AQADM.CREATE_QUEUE_TABLE(
      Queue_table        => 'MY_QUEUE',
      Queue_payload_type => 'SYS.AQ$_JMS_MESSAGE');
-  END;
-
-  BEGIN DBMS_AQADM.CREATE_QUEUE(
+  
+  DBMS_AQADM.CREATE_QUEUE(
      Queue_name          => 'MY_QUEUE',
      Queue_table         => 'MY_QUEUE');
-  END;
-
-  BEGIN DBMS_AQADM.START_QUEUE(
+  
+  DBMS_AQADM.START_QUEUE(
      Queue_name          => 'MY_QUEUE');
   END;
 ```
 
+*Check this [docker image](https://hub.docker.com/r/wnameless/oracle-xe-11g/) if you need an Oracle installation*
 ### Run the project
 
 Review the file **MyConfig** before you run:
