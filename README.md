@@ -4,9 +4,9 @@
 
 ### Required
 
- - JDK 8 +
- - Scala (2.11.7 +)
- - sbt (0.13 +)
+ - [JDK 8 +](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+ - [Scala 2.11.7 +](http://www.scala-lang.org/download/)
+ - [Sbt 0.13 +](http://www.scala-sbt.org/download.html)
  - oracle artifacts (*aqapi12 and ojdbc5*) aren't found on Maven Central,
  	so you have to put them on your local maven repo
 
